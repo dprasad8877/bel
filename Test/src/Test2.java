@@ -1,21 +1,20 @@
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
 
 public class Test2 {
 	public static void main(String[] args) {
 		// getSmallestAndLargest("welcome",3);
 		System.out.println(getSmallestAndLargest("welcome", 3));
-		//SubString("welcome", 3);
+		// SubString("welcome", 3);
 	}
 
 	public static String getSmallestAndLargest(String s, int k) {
 		String smallest = "";
 		String largest = "";
 		// int arrLength=(int) Math.ceil((float)s.length()/k);
-		//String[] subStrArr = splitByNumber(s, k);
-		ArrayList<String> l=SubString(s, k);
-		String[] subStrArr = l.toArray(new String[l.size()]);;
+		// String[] subStrArr = splitByNumber(s, k);
+		ArrayList<String> l = SubString(s, k);
+		String[] subStrArr = l.toArray(new String[l.size()]);
+		;
 		int arrLength = subStrArr.length;
 		for (int i = 0; i < arrLength - 1; i++) {
 			for (int j = 0; j < arrLength - i - 1; j++) {
@@ -57,7 +56,8 @@ public class Test2 {
 		return arrList;
 	}
 
-	/*public static String[] splitByNumber(String str, int size) {
-		return (size < 1 || str == null) ? null : str.split("(?<=\\G.{" + size + "})");
-	}*/
+	/*
+	 * public static String[] splitByNumber(String str, int size) { return (size < 1
+	 * || str == null) ? null : str.split("(?<=\\G.{" + size + "})"); }
+	 */
 }
