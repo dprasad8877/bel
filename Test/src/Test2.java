@@ -14,7 +14,7 @@ public class Test2 {
 		// String[] subStrArr = splitByNumber(s, k);
 		ArrayList<String> l = SubString(s, k);
 		String[] subStrArr = l.toArray(new String[l.size()]);
-		;
+		System.out.println("hello diwakar");
 		int arrLength = subStrArr.length;
 		for (int i = 0; i < arrLength - 1; i++) {
 			for (int j = 0; j < arrLength - i - 1; j++) {
